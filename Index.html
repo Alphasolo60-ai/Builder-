@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA | Premium Web Design & Development | Navrongo, Ghana</title>
+    <meta name="description" content="ALPHA builds high-converting websites for businesses, e-commerce, portfolios, and ad funnels in Ghana and worldwide.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            accent: '#6366f1',
+                            accentHover: '#4f46e5',
+                            darkBg: '#0b0f19',
+                            cardBg: '#111827',
+                            border: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .glow-effect {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.3);
+        }
+        .glow-effect-green {
+            box-shadow: 0 0 30px -5px rgba(34, 197, 94, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-brand-darkBg text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-darkBg/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 text-2xl font-black tracking-wider text-white">
+                <span class="bg-gradient-to-r from-brand-accent to-brand-500 bg-clip-text text-transparent">ALPHA</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-brand-accent/20 text-brand-accent font-semibold border border-brand-accent/30">STUDIO</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-brand-500 transition">Services</a>
+                <a href="#portfolio" class="hover:text-brand-500 transition">Work Showcase</a>
+                <a href="#pricing" class="hover:text-brand-500 transition">Pricing</a>
+                <a href="#calculator" class="hover:text-brand-500 transition">Quote Calculator</a>
+                <a href="#contact" class="hover:text-brand-500 transition">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/233558307523?text=Hello%20ALPHA,%20I%20am%20interested%20in%20building%20a%20website." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm px-4 py-2.5 rounded-lg transition shadow-lg shadow-emerald-900/30">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+                <a href="tel:0558307523" class="inline-flex sm:hidden items-center justify-center p-2.5 bg-brand-accent text-white rounded-lg">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-brand-500 text-xs font-semibold uppercase tracking-wider mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Websites Built For Every Business Niche
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto">
+                We Build Websites That Turn <span class="bg-gradient-to-r from-brand-accent via-purple-400 to-brand-500 bg-clip-text text-transparent">Visitors Into Customers</span>
+            </h1>
+
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-light">
+                Whether you need a business platform, e-commerce shop, portfolio, or landing page for ads — <strong class="text-white">ALPHA</strong> delivers high-speed, modern designs designed to sell.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/233558307523?text=Hi%20ALPHA,%20I%20want%20a%20website%20quote!" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-accent to-brand-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl hover:opacity-95 transition glow-effect">
+                    <i class="fa-solid fa-rocket"></i>
+                    Get Started Now
+                </a>
+                <a href="#calculator" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-lg px-8 py-4 rounded-xl border border-slate-700 transition">
+                    <i class="fa-solid fa-calculator"></i>
+                    Calculate Price
+                </a>
+            </div>
+
+            <div class="mt-12 flex flex-wrap items-center justify-center gap-6 text-slate-400 text-sm">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-500"></i>
+                    <span>Based in Navrongo, Ghana</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-amber-400"></i>
+                    <span>Ultra-Fast Delivery</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-mobile-screen text-brand-accent"></i>
+                    <span>100% Mobile Friendly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 bg-slate-900/50 border-t border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-brand-accent mb-2">Our Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Websites Built for Every Industry</p>
+                <p class="text-slate-400 mt-3">No matter what you sell or offer, we create tailored digital solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-accent/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">E-Commerce Stores</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Sell products effortlessly with online payment integration (Mobile Money & Cards), auto-invoicing, and stock management.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-500/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Ad Landing Pages</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">High-conversion single-page layouts designed specifically to capture leads from Facebook, TikTok, and Google Ads.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-accent/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Corporate & Business</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Establish instant authority and trust for companies, agencies, consultants, and service providers.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-500/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Personal & Portfolios</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Showcase your personal brand, creative work, photography, or resume with sleek interactive galleries.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-accent/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hospitality & Booking</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Websites for hotels, restaurants, event centers, and salons equipped with direct appointment and booking systems.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-500/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Web Apps</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Tailor-made web portals, dashboards, customer portals, and web tools built according to your specifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Price Calculator -->
+    <section id="calculator" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-900 via-brand-cardBg to-slate-900 border border-slate-700 rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <div class="text-center mb-10">
+                    <span class="text-brand-500 font-semibold text-xs tracking-widest uppercase">Instant Estimator</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-1">Project Price Calculator</h2>
+                    <p class="text-slate-400 text-sm mt-2">Get an estimated quote for your website in seconds</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-slate-300 font-semibold text-sm mb-3">1. Select Website Type</label>
+                        <select id="calcType" onchange="calculatePrice()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-brand-accent focus:outline-none">
+                            <option value="800">Landing Page / Ads Funnel (~GH₵ 800)</option>
+                            <option value="1500" selected>Business Website (~GH₵ 1,500)</option>
+                            <option value="2500">Full E-Commerce Store (~GH₵ 2,500)</option>
+                            <option value="3000">Custom Web Application (~GH₵ 3,000+)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-slate-300 font-semibold text-sm mb-3">2. Additional Features Needed</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="flex items-center gap-3 bg-slate-800/60 p-3 rounded-lg border border-slate-700 cursor-pointer">
+                                <input type="checkbox" value="300" class="calc-addon rounded text-brand-accent" onchange="calculatePrice()">
+                                <span class="text-sm text-slate-300">Payment Gateway Integration (+GH₵ 300)</span>
+                            </label>
+                            <label class="flex items-center gap-3 bg-slate-800/60 p-3 rounded-lg border border-slate-700 cursor-pointer">
+                                <input type="checkbox" value="200" class="calc-addon rounded text-brand-accent" onchange="calculatePrice()">
+                                <span class="text-sm text-slate-300">Live Chat / WhatsApp (+GH₵ 200)</span>
+                            </label>
+                            <label class="flex items-center gap-3 bg-slate-800/60 p-3 rounded-lg border border-slate-700 cursor-pointer">
+                                <input type="checkbox" value="250" class="calc-addon rounded text-brand-accent" onchange="calculatePrice()">
+                                <span class="text-sm text-slate-300">SEO Optimization (+GH₵ 250)</span>
+                            </label>
+                            <label class="flex items-center gap-3 bg-slate-800/60 p-3 rounded-lg border border-slate-700 cursor-pointer">
+                                <input type="checkbox" value="400" class="calc-addon rounded text-brand-accent" onchange="calculatePrice()">
+                                <span class="text-sm text-slate-300">Rush Delivery (2-3 Days) (+GH₵ 400)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-6">
+                        <div>
+                            <p class="text-xs text-slate-400">Estimated Total:</p>
+                            <p id="totalPrice" class="text-3xl font-black text-brand-500">GH₵ 1,500</p>
+                        </div>
+                        <a id="calcWhatsappLink" href="https://wa.me/233558307523?text=Hi%20ALPHA,%20I%20used%20your%20calculator%20and%20got%20an%20estimate%20of%20GHS%201500." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            Claim Quote on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Tables -->
+    <section id="pricing" class="py-20 bg-slate-900/40 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-brand-accent mb-2">Simple Transparent Pricing</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Choose Your Package</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Starter Tier -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Ad Landing Page</h3>
+                        <p class="text-slate-400 text-xs mt-1">Best for ad campaigns & lead capture</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-white">GH₵ 800</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Single High-Converting Page</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Direct WhatsApp Lead Button</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Fast Mobile Loading Speed</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Basic Contact Form</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/233558307523?text=Hi%20ALPHA,%20I'm%20interested%20in%20 the%20Ad%20Landing%20Page%20Package." target="_blank" class="mt-8 w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-center block transition">Select Plan</a>
+                </div>
+
+                <!-- Business Tier (Featured) -->
+                <div class="bg-slate-900 border-2 border-brand-accent rounded-2xl p-8 flex flex-col justify-between relative glow-effect">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Business Website</h3>
+                        <p class="text-slate-400 text-xs mt-1">Best for companies & professionals</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-white">GH₵ 1,500</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Up to 5 Custom Pages</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Full Mobile Optimization</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Basic Search Engine SEO</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Contact Form & Google Map</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Social Media Links Integration</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/233558307523?text=Hi%20ALPHA,%20I'm%20interested%20in%20the%20Business%20Website%20Package." target="_blank" class="mt-8 w-full py-3 rounded-xl bg-brand-accent hover:bg-brand-accentHover text-white font-semibold text-center block transition">Select Plan</a>
+                </div>
+
+                <!-- E-Commerce Tier -->
+                <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">E-Commerce Store</h3>
+                        <p class="text-slate-400 text-xs mt-1">Best for online stores & product sellers</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-white">GH₵ 2,500</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Unlimited Product Listings</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Payment Gateway (MoMo/Cards)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Order Management System</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Customer Accounts Support</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/233558307523?text=Hi%20ALPHA,%20I'm%20interested%20in%20the%20E-Commerce%20Package." target="_blank" class="mt-8 w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-center block transition">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Contact & Details -->
+    <section id="contact" class="py-20 border-t border-brand-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-white mb-4">Let's Build Your Website Today</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">Ready to launch your online presence? Contact <strong class="text-white">ALPHA</strong> directly and let's bring your project to life.</p>
+
+            <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-around gap-6">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="w-12 h-12 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Call / Mobile</p>
+                        <a href="tel:0558307523" class="text-lg font-bold text-white hover:text-brand-500">055 830 7523</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 text-left">
+                    <div class="w-12 h-12 rounded-full bg-brand-accent/10 text-brand-accent flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Location</p>
+                        <p class="text-lg font-bold text-white">Navrongo, Ghana</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <a href="https://wa.me/233558307523?text=Hi%20ALPHA,%20I'd%20like%20to%20discuss%20a%20website%20project." target="_blank" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl transition">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Start Chatting on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800 text-slate-500 text-sm text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 <span class="text-white font-semibold">ALPHA</span> Studio. All Rights Reserved. Navrongo, Ghana.</p>
+        </div>
+    </footer>
+
+    <!-- Price Calculator Script -->
+    <script>
+        function calculatePrice() {
+            let base = parseInt(document.getElementById('calcType').value);
+            let addons = document.querySelectorAll('.calc-addon:checked');
+            let addonTotal = 0;
+            
+            addons.forEach(addon => {
+                addonTotal += parseInt(addon.value);
+            });
+
+            let grandTotal = base + addonTotal;
+            document.getElementById('totalPrice').innerText = 'GH₵ ' + grandTotal.toLocaleString();
+
+            // Dynamic WhatsApp message update
+            let waBtn = document.getElementById('calcWhatsappLink');
+            let msg = `Hi ALPHA, I calculated a web design estimate of GH%C2%A2 ${grandTotal}. I would like to get started!`;
+            waBtn.href = `https://wa.me/233558307523?text=${msg}`;
+        }
+    </script>
+</body>
+</html>
